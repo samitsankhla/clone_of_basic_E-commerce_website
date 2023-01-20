@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+:root {
+    --main-bg-color:#2874f0;
+}
+
+.progress{
+    background-color:rgb(50, 199, 199);
+    height: 3px;
+    animation:load 1s ease-in-out 1 ;
+}
+
+@keyframes load {
+    0%{
+        width: 0;
+    }
+    70%{
+        width: 90vw;
+    }
+    100%{
+        width: 100vw;
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+          background-color:var(--main-bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+}
+
+
+.logo{
+   
+     display: flex;
+    align-items: center;
+}
+.logo p{
+    width: 88px;
+    padding: 0 40px;
+    color:rgb(50, 199, 199);
+    font-weight:bold;
+}
+nav ul{
+    height:58px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+
+
+nav ul li a{
+
+    color:white;
+    text-decoration: none;
+ }
+ nav ul li a:hover{
+
+    /* color:rgb(98, 130, 189); */
+    font-weight:bold;
+ }
+ .search{
+       display: flex;
+  align-items: center;
+}
+
+.search input{
+    width: 30vw;
+    height: 27px;
+    border-radius: 4px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+}
+
+
+.search button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.slider{
+    
+    width:80vw ;
+    margin: 12px auto;
+    overflow: hidden;
+     margin: auto;
+         display: flex;
+          justify-content: center;
+}
+
+@keyframes slide1 {
+    0%{
+        transform:translate(-8vw);
+    }
+    100%{
+      transform:translate(85vw);
+    }
+}
+
+@keyframes slide2 {
+    0%{
+        transform:translate(0vw);
+    }
+    100%{
+      transform:translate(92vw);
+    }
+}
+.img1{
+ transform: translate(-8vw);
+ animation: slide1 1s 7s forwards;
+}
+.img2{
+   transform:translateX(0vw);
+   animation: slide2 1s 7s forwards;
+  
+}   
+
+
+
+.card{
+    max-width: 91vw;
+    margin: 37px auto;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+ 
+.cards{
+    display:flex;
+    flex-direction: row;
+    overflow: hidden;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.card h2{
+      
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.card-item{
+        margin: 0 10px ;
+        display: inline-flex;
+        justify-content: center;
+        flex-direction:column ;
+}
+
+.container{
+
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+
+footer{
+    height: 12vh;
+    background-color:var(--main-bg-color);
+    color:white;
+    font-family: 'Poppins', sans-serif;
+   
+}
